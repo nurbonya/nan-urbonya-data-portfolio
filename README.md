@@ -39,28 +39,21 @@ Interactive dashboard for university leadership: real‑time metrics, SQL integr
 
 ---
 
-## Getting Started
+
+## **📁 Repository Navigation**
+- **project-ai-job-market-analysis** → forecasting, NLP modeling, scenario analysis  
+- **project-workforce-ml-analysis** → workforce ML models + dashboard integration  
+- **project-deep-learning-image-detection** → CNN/transfer learning prototypes  
+- **project-enrollment-rshiny-dashboard** → functional R Shiny dashboard  
+- **docs/** → About + links
+
+---
+
+## **🚀 Getting Started**
+
+### **Clone the repository**
 ```bash
-# Clone the repo
-git clone https://github.com/yourhandle/nan-urbonya-data-portfolio.git
+git clone https://github.com/YOUR-USERNAME/nan-urbonya-data-portfolio.git
 cd nan-urbonya-data-portfolio
 
-# Explore projects
-ls -la project-*/
-
-## 🔗 Quick Links for Hiring Managers
-
-**Resume bullets**
-- Predictive modeling and scenario analysis  
-- Dashboard development in Tableau / Power BI / R Shiny  
-- Data integrity, validation, and governance  
-- Cloud & big-data stacks: AWS, Spark, Snowflake, Databricks  
-
-**Impact**
-- Delivered policy‑relevant insights for statewide workforce programs  
-- Built stakeholder‑ready dashboards for real‑time decision support  
-- Improved data quality and ensured reliable reporting pipelines  
-
-**Contact**
-📧 nan.urbonya@gmail.com  
-🔗 linkedin.com/in/nan-urbonya
+## LICENSE (MIT)
