@@ -47,3 +47,20 @@ cd nan-urbonya-data-portfolio
 
 # Explore projects
 ls -la project-*/
+
+## 🔗 Quick Links for Hiring Managers
+
+**Resume bullets**
+- Predictive modeling and scenario analysis  
+- Dashboard development in Tableau / Power BI / R Shiny  
+- Data integrity, validation, and governance  
+- Cloud & big-data stacks: AWS, Spark, Snowflake, Databricks  
+
+**Impact**
+- Delivered policy‑relevant insights for statewide workforce programs  
+- Built stakeholder‑ready dashboards for real‑time decision support  
+- Improved data quality and ensured reliable reporting pipelines  
+
+**Contact**
+📧 nan.urbonya@gmail.com  
+🔗 linkedin.com/in/nan-urbonya
