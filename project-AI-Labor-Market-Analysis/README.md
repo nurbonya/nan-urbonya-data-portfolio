@@ -61,9 +61,9 @@ We also developed a dashboard that presented data and visualization/graphs showi
 -   There is a need of more skills analysis as well as how skills will change as AI becomes more prevalent
 -   Occupations with high AI exposure tended to have a much higher share of postings accounted for by Ghost Jobs relative to occupations with low AI exposure
 
-![Image5](images/Example Scatter.pdf.jpg)
+![Image5](images/Example_Scatter.pdf.jpg)
 
-![Image6](images/Export Figure.pdf.jpg)
+![Image6](images/Export_Figure.pdf.jpg)
 
 ### Caveats
 
