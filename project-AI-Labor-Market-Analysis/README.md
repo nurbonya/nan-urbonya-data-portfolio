@@ -25,7 +25,7 @@ Brynjolfsson et al. (2019) applied a 23-question rubric to evaluate how suitable
 
 From that study, we used a list of 10 most exposed and 10 least exposed AI occupations to study the job postings, employment, wages, projections, and skills trends for these occupations using NLX's job postings data supplemented with Occupational Employment and Wages Statistics (OEWS) data and States' projections data for these selected occupations.
 
-![image info](C:/Users/urbonn/Documents/Backup Ducument/Document/Nan Personal Dodument/ADA Training/Project/Graph/image.png)
+![Image1](image/image.png)
 
 ### The Data
 
