@@ -45,13 +45,13 @@ Based on the above-mentioned datasets, we explored trends in job postings over t
 
 We also developed a dashboard that presented data and visualization/graphs showing trends in job postings, skills analysis using trend and word cloud, analyzing Ghost Jobs, showing projections models and the postings trends and States's projections data summary. The dashboard is accessible at <https://jrtresearchandconsulting.shinyapps.io/request/>.
 
-![image info](images/page1.png)
+![Image2](images/page1.png)
 
-![image info](images/page2.png){width="669"}
+![Image3](images/page2.png){width="669"}
 
-![image info](images/page3.png){width="645"}
+![Image4](images/page3.png){width="645"}
 
-![image info](images/page4.png)
+![Image5](images/page4.png)
 
 ### Key Findings
 
@@ -61,9 +61,9 @@ We also developed a dashboard that presented data and visualization/graphs showi
 -   There is a need of more skills analysis as well as how skills will change as AI becomes more prevalent
 -   Occupations with high AI exposure tended to have a much higher share of postings accounted for by Ghost Jobs relative to occupations with low AI exposure
 
-![image info](images/Example Scatter.pdf.jpg)
+![Image5](images/Example Scatter.pdf.jpg)
 
-![image info](images/Export Figure.pdf.jpg)
+![Image6](images/Export Figure.pdf.jpg)
 
 ### Caveats
 
