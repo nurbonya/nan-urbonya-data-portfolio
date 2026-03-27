@@ -1,0 +1,86 @@
+onet_title,ghostjob,jobclass,state,n_jobs_postings
+Carpenters,f,0,MO,78
+Carpenters,f,0,WI,248
+Carpenters,f,1,MO,293
+Carpenters,f,1,WI,1390
+Carpenters,f,NA,MO,28
+Carpenters,f,NA,WI,96
+Carpenters,NA,NA,MO,656
+Carpenters,NA,NA,WI,2827
+Construction Laborers,f,0,MO,64
+Construction Laborers,f,0,WI,219
+Construction Laborers,f,1,MO,517
+Construction Laborers,f,1,WI,2273
+Construction Laborers,f,NA,MO,73
+Construction Laborers,f,NA,WI,166
+Construction Laborers,t,0,MO,11
+Construction Laborers,t,0,WI,11
+Construction Laborers,NA,NA,MO,1305
+Construction Laborers,NA,NA,WI,3422
+"Cooks, Restaurant",f,0,MO,684
+"Cooks, Restaurant",f,0,WI,550
+"Cooks, Restaurant",f,1,MO,2962
+"Cooks, Restaurant",f,1,WI,3147
+"Cooks, Restaurant",f,NA,MO,138
+"Cooks, Restaurant",f,NA,WI,136
+"Cooks, Restaurant",NA,NA,MO,4053
+"Cooks, Restaurant",NA,NA,WI,4682
+Fast Food and Counter Workers,f,0,MO,4005
+Fast Food and Counter Workers,f,0,WI,3041
+Fast Food and Counter Workers,f,1,MO,12992
+Fast Food and Counter Workers,f,1,WI,9918
+Fast Food and Counter Workers,f,NA,MO,558
+Fast Food and Counter Workers,f,NA,WI,367
+Fast Food and Counter Workers,t,2,WI,26
+Fast Food and Counter Workers,NA,NA,MO,21027
+Fast Food and Counter Workers,NA,NA,WI,26477
+Food Preparation Workers,f,0,MO,245
+Food Preparation Workers,f,0,WI,434
+Food Preparation Workers,f,1,MO,1084
+Food Preparation Workers,f,1,WI,2665
+Food Preparation Workers,f,NA,MO,69
+Food Preparation Workers,f,NA,WI,101
+Food Preparation Workers,t,0,WI,22
+Food Preparation Workers,NA,NA,MO,2023
+Food Preparation Workers,NA,NA,WI,4088
+"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",f,0,MO,807
+"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",f,0,WI,766
+"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",f,1,MO,3221
+"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",f,1,WI,6239
+"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",f,NA,MO,172
+"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",f,NA,WI,428
+"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",NA,NA,MO,8230
+"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",NA,NA,WI,14496
+Landscaping and Groundskeeping Workers,f,0,MO,99
+Landscaping and Groundskeeping Workers,f,0,WI,67
+Landscaping and Groundskeeping Workers,f,1,MO,786
+Landscaping and Groundskeeping Workers,f,1,WI,1083
+Landscaping and Groundskeeping Workers,f,NA,MO,30
+Landscaping and Groundskeeping Workers,f,NA,WI,91
+Landscaping and Groundskeeping Workers,NA,NA,MO,959
+Landscaping and Groundskeeping Workers,NA,NA,WI,3395
+Maids and Housekeeping Cleaners,f,0,MO,517
+Maids and Housekeeping Cleaners,f,0,WI,369
+Maids and Housekeeping Cleaners,f,1,MO,2112
+Maids and Housekeeping Cleaners,f,1,WI,2908
+Maids and Housekeeping Cleaners,f,NA,MO,131
+Maids and Housekeeping Cleaners,f,NA,WI,149
+Maids and Housekeeping Cleaners,t,1,MO,19
+Maids and Housekeeping Cleaners,NA,NA,MO,4103
+Maids and Housekeeping Cleaners,NA,NA,WI,4912
+Waiters and Waitresses,f,0,MO,297
+Waiters and Waitresses,f,0,WI,249
+Waiters and Waitresses,f,1,MO,972
+Waiters and Waitresses,f,1,WI,1463
+Waiters and Waitresses,f,NA,MO,73
+Waiters and Waitresses,f,NA,WI,111
+Waiters and Waitresses,NA,NA,MO,2965
+Waiters and Waitresses,NA,NA,WI,4140
+"Welders, Cutters, Solderers, and Brazers",f,0,MO,234
+"Welders, Cutters, Solderers, and Brazers",f,0,WI,836
+"Welders, Cutters, Solderers, and Brazers",f,1,MO,1139
+"Welders, Cutters, Solderers, and Brazers",f,1,WI,4302
+"Welders, Cutters, Solderers, and Brazers",f,NA,MO,64
+"Welders, Cutters, Solderers, and Brazers",f,NA,WI,254
+"Welders, Cutters, Solderers, and Brazers",NA,NA,MO,1628
+"Welders, Cutters, Solderers, and Brazers",NA,NA,WI,6485
