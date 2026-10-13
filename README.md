@@ -2,9 +2,7 @@
 
 **Actively seeking** roles: **Data Analyst** · **Business Intelligence Analyst** · **Data Scientist** · **Product Manager (Data)**
 
-I’m a detail‑oriented data scientist/analyst with experience across predictive modeling, BI dashboards, data engineering workflows, and integrity assurance in government and higher‑ed environments. I translate ambiguous questions into actionable insights and build data products that inform decisions.
-
-**📍 Jefferson City, MO** · **📧 nan.urbonya@gmail.com** · **🔗 linkedin.com/in/nan-urbonya**
+Data analyst with expertise in SQL, Python, Tableau, and cloud platforms. Experienced transforming complex datasets into clear dashboards, analytics models, and program evaluations that support operational and policy decision-making. Background spans government workforce analytics, higher education database administration, and international operations management.
 
 ---
 
@@ -50,7 +48,8 @@ Interactive dashboard for university leadership: real‑time metrics, SQL integr
 
 ## 🤝 Connect with Me!
 If you are looking for an analytical mind to join your team or want to collaborate on a data-driven project, feel free to reach out:
-* **LinkedIn**: [linkedin.com/in/nan-urbonya/](https://linkedin.com/in/nan-urbonya/)
+ **📧 nan.urbonya@gmail.com** · 
+ **🔗 [linkedin.com/in/nan-urbonya](https://linkedin.com/in/nan-urbonya/)**
 
 ---
 *“Without data, you’re just another person with an opinion.” — W. Edwards Deming*
