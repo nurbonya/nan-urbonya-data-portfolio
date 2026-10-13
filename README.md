@@ -1,4 +1,3 @@
-
 # Nan Urbonya — Data Portfolio
 
 **Actively seeking** roles: **Data Analyst** · **Business Intelligence Analyst** · **Data Scientist** · **Product Manager (Data)**
@@ -49,11 +48,9 @@ Interactive dashboard for university leadership: real‑time metrics, SQL integr
 
 ---
 
-## **🚀 Getting Started**
+## 🤝 Connect with Me!
+If you are looking for an analytical mind to join your team or want to collaborate on a data-driven project, feel free to reach out:
+* **LinkedIn**: [linkedin.com/in/nan-urbonya/](https://linkedin.com/in/nan-urbonya/)
 
-### **Clone the repository**
-```bash
-git clone https://github.com/YOUR-USERNAME/nan-urbonya-data-portfolio.git
-cd nan-urbonya-data-portfolio
-
-## LICENSE (MIT)
+---
+*“Without data, you’re just another person with an opinion.” — W. Edwards Deming*
