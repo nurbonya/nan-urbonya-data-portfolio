@@ -1,3 +1,7 @@
+<p align="center">
+  project_banner.jpeg="Project Banner" style="width:100%; height:auto;">
+</p>
+
 # WIOA Repeat Participant Analysis Project
 
 ## Overview
