@@ -1,0 +1,263 @@
+---
+title: "Correlation Analysis"
+output:
+  html_document:
+    df_print: paged
+date: "2025-02-18"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Set target group
+All participant enrolled program after 07-01-2017
+
+Times=1 Group0  49804 total Age: 39.75
+Times<10 Group 1  722951 total  age: 40.32
+Times>= 10 Times<20 Group 2  16114 total age: 43.72
+Times>=20 Group 3  199 total 42.62
+
+For all participant, average age is 40.40
+
+
+
+
+
+
+
+```{r}
+
+library(tidyverse)
+
+ participant <- read.csv("~/Analysis frequent customes/DataSource/parcitipant.csv")
+ user_stateid<- read.csv("~/Analysis frequent customes/DataSource/user_stateid.csv")
+ 
+# 
+participant$Begin_Date<- ymd(participant$Begin_Date)
+participant$Exit_Date<- ymd(participant$Exit_Date)
+
+participant_target<- participant %>% filter(Begin_Date>= as.Date("2017-07-01") & Exit_Date >= as.Date("2017-07-01"))
+
+```
+
+```{r}
+## Race
+
+```
+
+```{r}
+## Coding the industry code
+
+participant_target$Industry_1prior<- substr(participant_target$Industry_1prior,1,2)
+participant_target$Industry_2prior<- substr(participant_target$Industry_2prior,1,2)
+participant_target$Industry_3prior<- substr(participant_target$Industry_3prior,1,2)
+
+
+participant_target$Industry_1prior <- ifelse(is.na(participant_target$Industry_1prior), 1,                                      ifelse((participant_target$Industry_1prior==11|
+            participant_target$Industry_1prior == 21|
+            participant_target$Industry_1prior == 22), 2,
+      ifelse((participant_target$Industry_1prior==23) , 3,
+        ifelse((participant_target$Industry_1prior==31|
+                participant_target$Industry_1prior == 32|
+                participant_target$Industry_1prior == 33), 4,
+          ifelse((participant_target$Industry_1prior==51) , 5,
+            ifelse((participant_target$Industry_1prior==52|
+                    participant_target$Industry_1prior==53) , 6,
+              ifelse((participant_target$Industry_1prior==54|
+                      participant_target$Industry_1prior==55|
+                      participant_target$Industry_1prior==56) , 7,
+                ifelse((participant_target$Industry_1prior==61|
+                        participant_target$Industry_1prior==62) , 8,
+                  ifelse((participant_target$Industry_1prior==71|
+                          participant_target$Industry_1prior==72) , 9,
+                    ifelse((participant_target$Industry_1prior==92) , 10,
+                      ifelse((participant_target$Industry_1prior==42|
+                              participant_target$Industry_1prior==44|
+                              participant_target$Industry_1prior==45|
+                              participant_target$Industry_1prior==48|
+                              participant_target$Industry_1prior==49|
+                              participant_target$Industry_1prior==81) , 11,12 )))))))))))
+
+participant_target$Industry_2prior <- ifelse(is.na(participant_target$Industry_2prior), 1,                                      ifelse((participant_target$Industry_2prior==11|
+            participant_target$Industry_2prior == 21|
+            participant_target$Industry_2prior == 22), 2,
+      ifelse((participant_target$Industry_2prior==23) , 3,
+        ifelse((participant_target$Industry_2prior==31|
+                participant_target$Industry_2prior == 32|
+                participant_target$Industry_2prior == 33), 4,
+          ifelse((participant_target$Industry_2prior==51) , 5,
+            ifelse((participant_target$Industry_2prior==52|
+                    participant_target$Industry_2prior==53) , 6,
+              ifelse((participant_target$Industry_2prior==54|
+                      participant_target$Industry_2prior==55|
+                      participant_target$Industry_2prior==56) , 7,
+                ifelse((participant_target$Industry_2prior==61|
+                        participant_target$Industry_2prior==62) , 8,
+                  ifelse((participant_target$Industry_2prior==71|
+                          participant_target$Industry_2prior==72) , 9,
+                    ifelse((participant_target$Industry_2prior==92) , 10,
+                      ifelse((participant_target$Industry_2prior==42|
+                              participant_target$Industry_2prior==44|
+                              participant_target$Industry_2prior==45|
+                              participant_target$Industry_2prior==48|
+                              participant_target$Industry_2prior==49|
+                              participant_target$Industry_2prior==81) , 11,12 )))))))))))
+
+participant_target$Industry_3prior <- ifelse(is.na(participant_target$Industry_3prior), 1,                                      ifelse((participant_target$Industry_3prior==11|
+            participant_target$Industry_3prior == 21|
+            participant_target$Industry_3prior == 22), 2,
+      ifelse((participant_target$Industry_3prior==23) , 3,
+        ifelse((participant_target$Industry_3prior==31|
+                participant_target$Industry_3prior == 32|
+                participant_target$Industry_3prior == 33), 4,
+          ifelse((participant_target$Industry_3prior==51) , 5,
+            ifelse((participant_target$Industry_3prior==52|
+                    participant_target$Industry_3prior==53) , 6,
+              ifelse((participant_target$Industry_3prior==54|
+                      participant_target$Industry_3prior==55|
+                      participant_target$Industry_3prior==56) , 7,
+                ifelse((participant_target$Industry_3prior==61|
+                        participant_target$Industry_3prior==62) , 8,
+                  ifelse((participant_target$Industry_3prior==71|
+                          participant_target$Industry_3prior==72) , 9,
+                    ifelse((participant_target$Industry_3prior==92) , 10,
+                      ifelse((participant_target$Industry_3prior==42|
+                              participant_target$Industry_3prior==44|
+                              participant_target$Industry_3prior==45|
+                              participant_target$Industry_3prior==48|
+                              participant_target$Industry_3prior==49|
+                              participant_target$Industry_3prior==81) , 11,12 )))))))))))
+
+participant_target<- subset(participant_target,select = -c(Low_income, English_Learner, Cross_Cultural, Dis_homemaker, Employment_Entry, UC_Status, School_Status_Entry, SSI_SSDI,Othe_Assistant, Homeless, Pre_vocational_Activities, ITA, Pell_Grant, Date_last_service, Recieve_needs_payments))
+
+
+# WIB Convert
+
+participant_target$WIB<- substr(participant_target$WIB, 1,2)
+
+participant_target<- participant_target%>% group_by(State_id)%>% mutate(Times=n())
+
+# Add age column
+participant_target$Age<- floor(time_length(difftime(participant_target$Begin_Date, ymd(participant_target$DOB)), "years"))
+
+
+## Count missing values by row
+participant_target$na_count <- apply(is.na(participant_target), 1, sum)
+
+participant_target<-left_join(participant_target,user_stateid, by=c('State_id'='stateid'))
+
+
+## Set tartget group between 10 to 20 times enrollment
+Frequent_div1<- participant_target %>%  filter(Times< 10)
+Frequent_div2<- participant_target %>%  filter(Times>=10 & Times< 20)
+Frequent_div3<- participant_target %>%  filter(Times >= 20)
+Frequent_div0<- participant_target %>% filter(Times==1)
+
+
+
+
+
+
+
+## Calculate missing value for each column
+# colSums(is.na(Frequent))
+
+
+
+```
+
+```{r}
+participant_target%>% ggplot() + geom_boxplot(aes(x=as.factor(Education), y=Age, colour = Gender))
+
+
+participant_target%>% ggplot() + geom_boxplot(aes(x=as.factor(Industry_1prior), y=Age, colour = as.factor(Industry_1prior)))
+
+
+```
+
+```{r}
+
+individual_div3<- Frequent_div3[!duplicated(Frequent_div3$State_id),]
+individual_div2<- Frequent_div2[!duplicated(Frequent_div2$State_id),]
+individual_div1<- Frequent_div1[!duplicated(Frequent_div1$State_id),]
+individual_div0<- Frequent_div0[!duplicated(Frequent_div0$State_id),]
+
+
+
+```
+
+```{r}
+library(GGally)
+ggcorr(subset(individual_div3, select = -c(Begin_Date, Exit_Date, WIB,Office,username,DOB,State_id )), label_size = 0.1)
+library(ggpubr)
+theme_set(theme_pubr())
+ggballoonplot(subset(individual_div3, select = -c(Begin_Date, Exit_Date, WIB,Office,username,DOB,State_id )), fill = "value")+ scale_fill_viridis_c(option = "C")
+
+linear3<- lm(Times~., data = individual_div3)
+# 
+# library(ggeffects)
+# new_df <- emmeans(lm, spec = ~X1*X5,
+#     at = list(X1 = seq(min(dataframe$X1), max(dataframe$X1), length.out = 100)))
+# ggplot(dataframe, aes(x = X1, y = Y, col = X5)) +
+#   geom_point() +
+#   geom_line(data = as.data.frame(new_df), aes(y = emmean))
+
+```
+
+```{r}
+
+ggcorr(subset(individual_div2, select = -c(Begin_Date, Exit_Date, WIB,Office,username,DOB,State_id )), label_size = 0.1)
+
+linear2=lm(Times~Age*Education*Gender,data=individual_div2)
+summary(linear2)
+
+ install.packages("ggiraphExtra", repos = "https://cran.rstudio.com/" )
+ library(ggiraphExtra)
+ggplot(individual_div2,aes(y=Times,x=Age,color=as.factor(Education)))+geom_point()+stat_smooth(method="lm",se=FALSE)
+
+ggPredict(linear2,interactive=TRUE)
+
+```
+
+```{r}
+ggcorr(subset(individual_div1, select = -c(Begin_Date, Exit_Date, WIB,Office,username,DOB,State_id )), label_size = 0.1)
+
+
+```
+
+```{r}
+
+individual<- rbind(individual_div0, individual_div1, individual_div2, individual_div3)
+individual<- individual[!duplicated(individual$State_id),]
+
+
+ggcorr(subset(individual_div0, select = -c(Begin_Date, Exit_Date, WIB,Office,username,DOB,State_id )), label_size = 0.1)
+
+
+install.packages("jtools", repos = "https://cran.rstudio.com/")
+library(jtools)
+fit <- lm(Times ~ ., data = subset(individual,select = -c(State_id, DOB, Begin_Date, Exit_Date, username, Office, WIB ,  Industry_3prior, Industry_2prior, Industry_1prior, Long_term_Unemployment, MSFS, na_count )))
+
+
+
+effect_plot(fit, pred = Education, interval = TRUE, plot.points = TRUE,jitter = .2)
+
+effect_plot(fit, pred = Age, interval = TRUE, plot.points = TRUE,jitter = .2)
+
+```
+
+```{python}
+import nltk
+nltk.download('stopwords')
+
+import nltk
+from nltk.corpus import stopwords
+
+stops = set(stopwords.words('english'))
+print(stops)
+
+
+
+
+```
