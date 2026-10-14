@@ -1,4 +1,4 @@
-# Nan Urbonya — Data Portfolio
+# Nan Urbonya 
 
 **Actively seeking** roles: **Data Analyst** · **Business Intelligence Analyst** · **Data Scientist** · **Product Manager (Data)**
 
