@@ -1,4 +1,4 @@
-(project_banner.jpeg)
+![Image1](project_banner.jpeg)
 
 # WIOA Repeat Participant Analysis Project
 
